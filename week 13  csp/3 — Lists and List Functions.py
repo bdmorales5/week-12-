@@ -1,24 +1,24 @@
-# # Objective:
-# # Students will understand how to create, modify, and access elements in Python lists.
+# Objective:
+# Students will understand how to create, modify, and access elements in Python lists.
 
-# # Topics Covered:
-# # Creating lists, indexing, slicing, appending, popping, sorting, reversing.
+# Topics Covered:
+# Creating lists, indexing, slicing, appending, popping, sorting, reversing.
 
-# # Examples:
+# Examples:
 
-# my_list = ['apple', 'banana', 'cherry']
-# print(my_list[0])         # apple
-# print(my_list[1:])        # ['banana', 'cherry']
+my_list = ['apple', 'banana', 'cherry']
+print(my_list[0])         # apple
+print(my_list[1:])        # ['banana', 'cherry']
 
-# my_list.append('grape')
-# print(my_list)
+my_list.append('grape')
+print(my_list)
 
-# my_list.pop(1)
-# print(my_list)
+my_list.pop(1)
+print(my_list)
 
-# numbers = [3, 1, 4, 2]
-# numbers.sort()
-# print(numbers)
+numbers = [3, 1, 4, 2]
+numbers.sort()
+print(numbers)
 
 #collects are used to store multiple items in a single variable
 # list are ordered collections of items
@@ -62,26 +62,37 @@ list_of_fruits.sort()# sorts the list in ascending order
 print(list_of_fruits)
 # why use list instead of individual variable
 
-list_of_items= list(range(1,1001))
+list_of_items= list(range(1,100000000001))
 print(list_of_items)
 print(len(list_of_items)) 
 list_of_items.extend(range(1001,2001))
 print(len(list_of_items))
 
 
-                    
-# # Create a list with 5 of your favorite foods.s
-# # Print the second and last item.
+#   # Make a list of 5 foods
+# foods = ["pizza", "burger", "pasta", "tacos", "sushi"]
 
-# # Add a new item using .append().
+# Print the second and last food
+print(foods[1])
+print(foods[-1])
 
-# # Remove the first item using .pop(0).
+# Add a new food
+foods.append("ice cream")
 
-# # Reverse your list using .reverse().
+# Remove the first food
+foods.pop(0)
 
-# # Create a list of 3 lists (matrix), and access the middle element.
+# Reverse the list
+foods.reverse()
 
+# Make a small matrix and print the middle number
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],  # middle row
+    [7, 8, 9]
+]
 
+print(matrix[1][1])  # middle element
 # instead pf creating separate variables
 # for each item we can store them in a list
 # this makes our job easier

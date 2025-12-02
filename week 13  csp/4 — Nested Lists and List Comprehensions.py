@@ -1,7 +1,67 @@
 # Objective:
 # Students will manipulate nested lists and understand basic list comprehensions.
 
-# Key Notes:
+# # Key Notes:
+# list1 = [1,2,3]
+# print(list[-1])
+# list2 =[4,5,6]
+# print(list2[0])
+# nested_list = [list1,list2]
+# #nested list
+# print(nested_list[0])
+# print(nested_list[1])
+# print(nested_list[0][1])
+# print(nested_list[1][2])
+
+
+# fruits=["apple","orange","banana","mango"]
+# vegetables=["celey","carrots","potatoes"]
+# meats=["chicken","fish","turkey"] 
+
+# groceries= [fruits,vegetables,meats]
+# print(groceries[2][2])
+
+# for collection in groceries:
+#     for food in collection:
+#           print(food, end=" ")
+#     print()
+
+# num_pad = ((1,2,3),
+#            (4,5,6),
+#            (7,8,9),
+#            ("*",0,"#"))
+
+# for row in num_pad:
+#     for num in row:
+#         print(num, end=" ")
+#     print()
+
+
+
+
+
+# #nestedm loops
+# for i in range(1,101): 
+#     for j in range(1,101):
+#         if i > 0 and j > 0:
+#             for k in range(1,101):
+#                  print("the number is ",i,j,k)
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # A list can contain other lists.
 
@@ -14,32 +74,40 @@
 
 # A list can contain other lists.
 
-# List comprehensions provide a concise way to create lists.
+# # List comprehensions provide a concise way to create lists.
 
-# Examples:
+# # Examples:
 
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+
+# print(matrix[1][2])    # 6
+
+# # List comprehension
+# first_col = [row[0] for row in matrix]
+# print(first_col)       # [1, 4, 7]
+
+
+
+# # Practice Problems:
+
+# Build a matrix variable containing 3 lists of 3 numbers each.
 matrix = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
 ]
-
-print(matrix[1][2])    # 6
-
-# List comprehension
-first_col = [row[0] for row in matrix]
-print(first_col)       # [1, 4, 7]
-
-
-
-# Practice Problems:
-
-# Build a matrix variable containing 3 lists of 3 numbers each.
-
 # Print the first list.
+print(matrix[0])
 
 # Print the second item from the third list.
-
+print(matrix[2][1])
 # Use a list comprehension to extract the last item from each sub-list.
-
+sum_list = [row[-1] for row in matrix]
+print(sum_list)         # [3, 6, 9]
 # Challenge: Create a new list containing squares of numbers from 1–10 using a comprehension.
+squares = [n**2 for n in range(1, 11)]
+print(squares)          
